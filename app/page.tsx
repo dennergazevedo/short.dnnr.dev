@@ -138,24 +138,24 @@ export default async function HomePage() {
                 href={site.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group relative overflow-hidden rounded-2xl border p-5 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 ${site.bg} ${site.border}`}
+                className={`group relative cursor-pointer rounded-2xl border px-4 py-3 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 ${site.bg} ${site.border}`}
               >
-                <div
-                  className={`mb-3 inline-flex h-9 w-9 items-center justify-center rounded-xl text-lg ${site.iconBg}`}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`absolute right-3 top-3 h-3.5 w-3.5 transition-opacity opacity-40 group-hover:opacity-80 ${site.text}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
                 >
-                  {site.icon}
-                </div>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                </svg>
                 <p className={`font-mono text-sm font-semibold ${site.text}`}>
                   {site.name}
                 </p>
                 <p className={`mt-0.5 text-xs ${site.sub}`}>
                   {site.description}
                 </p>
-                <span
-                  className={`absolute right-4 top-4 text-lg font-light transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ${site.arrow}`}
-                >
-                  ↗
-                </span>
               </a>
             ))}
           </div>
