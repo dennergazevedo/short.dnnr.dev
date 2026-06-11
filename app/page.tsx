@@ -56,6 +56,30 @@ const sites = [
     sub: "text-neutral-500",
     arrow: "text-neutral-300 group-hover:text-neutral-500",
   },
+  {
+    href: "https://bibliotecasecreta.com.br",
+    name: "bibliotecasecreta.com.br",
+    description: "Recomendações literárias personalizadas com IA",
+    icon: "📚",
+    bg: "bg-stone-50",
+    border: "border-stone-200 hover:border-stone-400",
+    iconBg: "bg-stone-100",
+    text: "text-stone-900",
+    sub: "text-stone-600",
+    arrow: "text-stone-300 group-hover:text-stone-500",
+  },
+  {
+    href: "https://news.dnnr.dev",
+    name: "news.dnnr.dev",
+    description: "Notícias de Tech, Curadas por IA.",
+    icon: "🗞️",
+    bg: "bg-indigo-50",
+    border: "border-indigo-200 hover:border-indigo-400",
+    iconBg: "bg-indigo-100",
+    text: "text-indigo-900",
+    sub: "text-indigo-600",
+    arrow: "text-indigo-300 group-hover:text-indigo-500",
+  },
 ];
 
 export default async function HomePage() {
@@ -107,7 +131,7 @@ export default async function HomePage() {
           <p className="mb-8 text-center text-xs font-semibold uppercase tracking-widest text-zinc-400">
             Outros projetos
           </p>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {sites.map((site) => (
               <a
                 key={site.href}
