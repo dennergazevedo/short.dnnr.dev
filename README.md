@@ -109,7 +109,7 @@ short.dnnr.dev/
 │   ├── auth.ts               # Gerenciamento de sessão via cookies
 │   ├── db.ts                 # Pool PostgreSQL + inicialização de tabelas
 │   └── definitions.ts        # Schemas Zod e tipos TypeScript
-├── middleware.ts              # Proteção de rotas no Edge Runtime
+├── proxy.ts                   # Proteção de rotas no Edge Runtime
 └── .env.local.example
 ```
 
