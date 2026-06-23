@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
+import { TopBar } from '@/components/TopBar'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable}`} data-scroll-behavior="smooth">
       <body className="min-h-screen bg-stone-50 text-zinc-900 antialiased">
+        <TopBar />
         <Navbar />
         {children}
       </body>
